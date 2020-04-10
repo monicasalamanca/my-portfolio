@@ -1,11 +1,55 @@
 {
   "name": "my-porfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My Portfolio",
+  "main": "index.js - git@github.com:monicasalamanca/my-portfolio.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next -p 7777",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Monica Salamanca",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "next": "9.3.3",
+    "nprogress": "^0.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "^5.0.1",
+    "styled-reset": "^4.1.2"
+  },
+  "//": "This is our babel config, I prefer this over a .babelrc file",
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      }
+    }
+  }
 }
