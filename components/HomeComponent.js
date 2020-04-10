@@ -1,5 +1,6 @@
 import { Component } from "react";
 import styled from 'styled-components';
+import useTranslation from '../hooks/useTranslations';
 
 const MyStyling = styled.div`
   height: 400px;
@@ -9,6 +10,8 @@ const MyStyling = styled.div`
 `
 
 const HomeComponent = () => {
+
+  const { t } = useTranslation()
 
   return (
     <MyStyling>
