@@ -7,6 +7,7 @@ const MyStyling = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #404040;
 `
 
 class Menu extends Component {

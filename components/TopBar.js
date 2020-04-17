@@ -14,6 +14,7 @@ const MyStyling = styled.div`
 
     li {
       margin-left: 10px;
+      color: #404040;
     }
   }
 `

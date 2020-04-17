@@ -13,6 +13,7 @@ const MyStyling = styled.div`
 
   ul li {
     margin: 14px 0;
+    color: #404040;
   }
 `
 

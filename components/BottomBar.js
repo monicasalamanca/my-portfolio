@@ -7,6 +7,7 @@ const MyStyling = styled.div`
   justify-content: flex-end;
   display: flex;
   line-height: 40px;
+  color: #404040;
 `
 
 class BottomBar extends Component {
