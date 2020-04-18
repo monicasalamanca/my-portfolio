@@ -8,13 +8,14 @@ const MyStyling = styled.div`
   display: flex;
   line-height: 40px;
   color: #404040;
+  font-size: 12px;
 `
 
 class BottomBar extends Component {
   render() {
     return (
       <MyStyling>
-        <p>2020</p>
+        <p>&copy; 2020</p>
       </MyStyling> 
     )
   }

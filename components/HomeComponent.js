@@ -9,17 +9,18 @@ const MyStyling = styled.div`
 
   h1 {
     margin-top: 60px;
-    font-size: 100px;
+    font-size: 90px;
     font-family: 'Montserrat', sans-serif;
-    line-height: 100%;
+    line-height: 90%;
     font-weight: 900;
   }
 
   p {
     font-family: 'Quicksand', sans-serif;
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: right;
-    font-size: 30px;
+    font-size: 25px;
+    color: #6b6b6b;
   }
 `
 
@@ -29,7 +30,7 @@ const HomeComponent = () => {
 
   return (
     <MyStyling>
-      <h1>Monica Salamanca</h1>
+      <h1>Monica Salamanca<span>.</span></h1>
       <p>{t('homePageText')}</p>
     </MyStyling> 
   )
