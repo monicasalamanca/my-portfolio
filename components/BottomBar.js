@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const MyStyling = styled.div`
   height: 40px;
-  margin: 0 40px;
+  margin: 0 80px;
   justify-content: flex-end;
   display: flex;
   line-height: 40px;

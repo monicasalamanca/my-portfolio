@@ -10,7 +10,6 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
   ${reset}
   body {
-    margin-top: 20px;
     font-family: 'Quicksand', sans-serif;
   }
 `
@@ -19,10 +18,13 @@ const MyPageStyle = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 40px;
+  box-sizing: 'border-box';
 `
 
 const Wrapper = styled.div`
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 `
@@ -31,6 +33,8 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-grow: 2;
+  box-sizing: 'border-box';
+  margin: 0 40px;
 
   .component-wrapper {
     flex-grow: 2;
@@ -52,7 +56,6 @@ const Page = ({ titleKey, children }) => {
     <MyPageStyle>
       <GlobalStyle />
       <Head>
-      <link href="/static/reset.min.css" rel="stylesheet" />
         <title>{t(titleKey)}</title>
       </Head>
       <Wrapper>
