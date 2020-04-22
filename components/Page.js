@@ -10,7 +10,7 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
   ${reset}
   body {
-    margin-top: 60px;
+    margin-top: 20px;
     font-family: 'Quicksand', sans-serif;
   }
 `
@@ -22,8 +22,7 @@ const MyPageStyle = styled.div`
 `
 
 const Wrapper = styled.div`
-  width: 800px;
-  height: 600px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 `
