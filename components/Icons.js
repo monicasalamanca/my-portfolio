@@ -10,6 +10,7 @@ const MyStyling = styled.div`
   flex-direction: column;
   justify-content: center;
   font-size: 12px;
+  border: 1px solid red;
 
   ul li {
     margin: 14px 0;

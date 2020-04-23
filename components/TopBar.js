@@ -1,19 +1,43 @@
 import React, { useContext, useCallback } from "react";
 import styled from 'styled-components';
-import { useRouter } from 'next/dist/client/router'
-import { locales, languageNames } from '../translations/config'
-import { LocaleContext } from '../context/LocaleContext'
+import { useRouter } from 'next/dist/client/router';
+import { locales, languageNames } from '../translations/config';
+import { LocaleContext } from '../context/LocaleContext';
+import { Menu as MenuBurger } from '@styled-icons/feather/Menu';
+import { Close } from '@styled-icons/evil/Close';
 
 const MyStyling = styled.div`
   height: 40px;
-  margin: 0 80px;
-  justify-content: flex-end;
+  margin: 0 16px;
   display: flex;
   line-height: 40px;
+  font-size: 16px;
+
+  @media (min-width: 800px) {
+    font-size: 16px;
+    margin: 0 80px;
+  }
+
+  .menu-burger {
+    width: 28px;
+    display: flex;
+    justify-content: flex-start;
+
+    @media (min-width: 800px) {
+      font-size: 16px;
+      margin: 0 80px;
+      display: none;
+    }
+  }
+
+  .close-menu {
+    width: 32px;
+  }
 
   ul {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 
     li {
       margin-left: 10px;
@@ -34,6 +58,8 @@ const TopBar = () => {
 
   return (
     <MyStyling>
+      <MenuBurger className="menu-burger" />
+      <Close className="close-menu" />
       <ul>
         {locales.map(locale => (
           <li key={locale} value={locale} >

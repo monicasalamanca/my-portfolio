@@ -15,36 +15,48 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const MyPageStyle = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px;
-  box-sizing: 'border-box';
+  border: 1px solid pink;
+
+  @media (min-width: 800px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+    box-sizing: 'border-box';
+  }
 `
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 `
 
 const ContentWrapper = styled.div`
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   flex-grow: 2;
   box-sizing: 'border-box';
-  margin: 0 40px;
+  margin: 0 16px;
+
+  @media (min-width: 800px) {
+    margin: 0 40px;
+  }
 
   .component-wrapper {
     flex-grow: 2;
-    padding: 60px;
-    margin: 10px;
+    /* padding: 60px;
+    margin: 10px; */
     border-radius: 5px;
     /* -webkit-box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65);
     -moz-box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65); */
-    box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65);
+    /* box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65); */
     /* background-color: #ff47bf; */
+
+    @media (min-width: 800px) {
+      margin: 0 40px;
+    }
   }
 `
 
@@ -63,7 +75,6 @@ const Page = ({ titleKey, children }) => {
         <ContentWrapper>
           <Menu />
           <div className='component-wrapper'>{children}</div>
-          <Icons />
         </ContentWrapper>
         <BottomBar />
       </Wrapper>
