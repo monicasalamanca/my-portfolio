@@ -4,7 +4,7 @@ import { Linkedin } from '@styled-icons/feather/Linkedin';
 import { Github } from '@styled-icons/feather/Github';
 import { Codepen } from '@styled-icons/feather/Codepen';
 
-const MyStyling = styled.div`
+const IconsStyle = styled.div`
   width: 40px;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ const MyStyling = styled.div`
 class Menu extends Component {
   render() {
     return (
-      <MyStyling>
+      <IconsStyle>
         <ul>
           <li>
             <a><Linkedin size="30" /></a>
@@ -33,7 +33,7 @@ class Menu extends Component {
             <a><Codepen size="30" /></a>
           </li>
         </ul>
-      </MyStyling> 
+      </IconsStyle> 
     )
   }
 }

@@ -2,7 +2,7 @@ import { Component } from "react";
 import styled from 'styled-components';
 import { Menu as MenuBurger } from '@styled-icons/feather/Menu';
 
-const MyStyling = styled.div`
+const MenuStyle = styled.div`
   display: none;
 
   @media (min-width: 800px) {
@@ -17,9 +17,9 @@ const MyStyling = styled.div`
 class Menu extends Component {
   render() {
     return (
-      <MyStyling>
+      <MenuStyle>
         <MenuBurger />
-      </MyStyling> 
+      </MenuStyle> 
     )
   }
 }

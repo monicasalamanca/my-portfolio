@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import { useRouter } from 'next/dist/client/router';
 import { locales, languageNames } from '../translations/config';
 import { LocaleContext } from '../context/LocaleContext';
-import { Menu as MenuBurger } from '@styled-icons/feather/Menu';
-import { Close } from '@styled-icons/evil/Close';
+import TopMenu from '../components/TopMenu';
 
-const MyStyling = styled.div`
+const TopBarStyle = styled.div`
   height: 40px;
   margin: 0 16px;
   display: flex;
@@ -16,22 +15,6 @@ const MyStyling = styled.div`
   @media (min-width: 800px) {
     font-size: 16px;
     margin: 0 80px;
-  }
-
-  .menu-burger {
-    width: 28px;
-    display: flex;
-    justify-content: flex-start;
-
-    @media (min-width: 800px) {
-      font-size: 16px;
-      margin: 0 80px;
-      display: none;
-    }
-  }
-
-  .close-menu {
-    width: 32px;
   }
 
   ul {
@@ -57,9 +40,9 @@ const TopBar = () => {
   }, [router]);
 
   return (
-    <MyStyling>
-      <MenuBurger className="menu-burger" />
-      <Close className="close-menu" />
+    <TopBarStyle>
+      <TopMenu />
+
       <ul>
         {locales.map(locale => (
           <li key={locale} value={locale} >
@@ -67,7 +50,8 @@ const TopBar = () => {
           </li>
         ))}
       </ul>
-    </MyStyling> 
+
+    </TopBarStyle> 
   )
 }
 

@@ -1,7 +1,7 @@
 import { Component } from "react";
 import styled from 'styled-components';
 
-const MyStyling = styled.div`
+const BottomBarStyle = styled.div`
   height: 40px;
   margin: 0 16px;
   justify-content: flex-end;
@@ -18,9 +18,9 @@ const MyStyling = styled.div`
 class BottomBar extends Component {
   render() {
     return (
-      <MyStyling>
+      <BottomBarStyle>
         <p>&copy; 2020</p>
-      </MyStyling> 
+      </BottomBarStyle> 
     )
   }
 }

@@ -2,7 +2,7 @@ import { Component } from "react";
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 
-const MyStyling = styled.div`
+const HomeStyle = styled.div`
     color: #292929;
     color: #4f4f4f;
     color: #404040;
@@ -62,10 +62,10 @@ const HomeComponent = () => {
   const { t } = useTranslation()
 
   return (
-    <MyStyling>
+    <HomeStyle>
       <h1>Monica <span>S</span>alamanca.</h1>
       <p>{t('homePageText')}</p>
-    </MyStyling> 
+    </HomeStyle> 
   )
 
 }
