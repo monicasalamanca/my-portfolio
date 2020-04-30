@@ -5,7 +5,7 @@ import withLocale from '../../hocs/withLocale';
 const Home = (props) => {
 
   return (
-    <div>
+    <div id="App">
       <Page titleKey="homePageTitle">
         <HomeComponent />
       </Page>

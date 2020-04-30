@@ -4,17 +4,19 @@ import { useRouter } from 'next/dist/client/router';
 import { locales, languageNames } from '../translations/config';
 import { LocaleContext } from '../context/LocaleContext';
 import TopMenu from '../components/TopMenu';
+import SideLeftMenu from '../components/SideLeftMenu';
 
 const TopBarStyle = styled.div`
   height: 40px;
-  margin: 0 16px;
+  /* margin: 0 16px; */
   display: flex;
   line-height: 40px;
   font-size: 16px;
+  position: relative;
 
   @media (min-width: 800px) {
     font-size: 16px;
-    margin: 0 80px;
+    /* margin: 0 80px; */
   }
 
   ul {
@@ -42,7 +44,7 @@ const TopBar = () => {
   return (
     <TopBarStyle>
       <TopMenu />
-
+      <SideLeftMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
       <ul>
         {locales.map(locale => (
           <li key={locale} value={locale} >

@@ -11,6 +11,12 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   body {
     font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    /* color: #EFFFFA; */
+    /* display: flex; */
+    /* height: 100vh; */
+    justify-content: center;
+    text-rendering: optimizeLegibility;
   }
 `
 
@@ -21,7 +27,7 @@ const MyPageStyle = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 40px;
+    /* margin: 40px; */
     box-sizing: 'border-box';
   }
 `
@@ -38,14 +44,14 @@ const ContentWrapper = styled.div`
   flex-direction: row;
   flex-grow: 2;
   box-sizing: 'border-box';
-  margin: 0 16px;
+  /* margin: 0 16px; */
 
-  @media (min-width: 800px) {
+  /* @media (min-width: 800px) {
     margin: 0 40px;
-  }
+  } */
 
   .component-wrapper {
-    flex-grow: 2;
+    /* flex-grow: 2; */
     /* padding: 60px;
     margin: 10px; */
     border-radius: 5px;
@@ -54,9 +60,9 @@ const ContentWrapper = styled.div`
     /* box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65); */
     /* background-color: #ff47bf; */
 
-    @media (min-width: 800px) {
+    /* @media (min-width: 800px) {
       margin: 0 40px;
-    }
+    } */
   }
 `
 
@@ -73,7 +79,6 @@ const Page = ({ titleKey, children }) => {
       <Wrapper>
         <TopBar />
         <ContentWrapper>
-          <Menu />
           <div className='component-wrapper'>{children}</div>
         </ContentWrapper>
         <BottomBar />
