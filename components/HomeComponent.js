@@ -6,15 +6,9 @@ const HomeStyle = styled.div`
     color: #292929;
     color: #4f4f4f;
     color: #404040;
-    padding: 16px;
     box-sizing: 'border-box';
 
   h1 {
-    /* animation-name: example;
-    animation-duration: 4s; 
-    font-size: 32px; */
-    /* animation-delay: 2s; */
-
     margin-top: 24px;
     font-size: 32px;
     word-break: 'break-word';
@@ -31,14 +25,7 @@ const HomeStyle = styled.div`
       line-height: 90%;
     }
 
-    /* @keyframes example {
-      from {font-size: 32px;}
-      to {font-size: 10px;}
-    } */
-
     span {
-      /* animation-name: example; */
-      /* animation-duration: 4s;  */
       font-size: 32px;
     }
   }

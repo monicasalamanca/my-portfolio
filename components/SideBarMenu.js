@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import styled from 'styled-components';
+import Language from './Language';
+import Link from 'next/link'
 
 const SideMenuStyle = styled.div`
   position: absolute;
-  border: 1px solid purple;
   /* top: 40px; */
   overflow: auto;
 
@@ -29,10 +30,10 @@ const SideMenuStyle = styled.div`
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
+    width: 30px;
+    height: 24px;
+    left: 16px;
+    top: 16px;
   }
 
   /* Color/shape of burger icon bars */
@@ -53,7 +54,7 @@ const SideMenuStyle = styled.div`
 
   /* General sidebar styles */
   .bm-menu {
-    background: #373a47;
+    background: #36bcd1;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }
@@ -73,27 +74,51 @@ const SideMenuStyle = styled.div`
     background: rgba(0, 0, 0, 0.3);
   }
 
+  .menu-item {
+    color: blue;
+    text-decoration: none;
+    display: flex;
+    color: #404040;
+  }
+
 `;
 
+
 const SideLeftMenu = (props) => {
+  const [menuState, setMenuState] = useState(true);
+
   return (
     <SideMenuStyle>
-      <Menu {...props}>
-        <a className="menu-item" href="/">
-          Home
-        </a>
+      <Menu 
+        {...props}
+        isOpen={menuState}
+      >
+        <Link href="/[lang]" as={`/${props.locale}`} >
+          <a className="menu-item" onClick={() => setMenuState(!menuState)}>
+            Home
+          </a>
+        </Link>
 
-        <a className="menu-item" href="/burgers">
-          Burgers
-        </a>
+        <Link href="/[lang]" >
+          <a className="menu-item">
+            About
+          </a>
+        </Link>
 
-        <a className="menu-item" href="/pizzas">
-          Pizzas
-        </a>
+        <Link href="/[lang]" >
+          <a className="menu-item">
+            Side gigs
+          </a>
+        </Link>
 
-        <a className="menu-item" href="/desserts">
-          Desserts
-        </a>
+        <Link href="/[lang]" >
+          <a className="menu-item">
+            Desserts
+          </a>
+        </Link>
+
+        <Language locales={props.locales} test={() => closeMenu} />
+
       </Menu>
     </SideMenuStyle>
   )

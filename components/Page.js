@@ -2,8 +2,6 @@ import Head from 'next/head';
 import useTranslation from '../hooks/useTranslations';
 import TopBar from './TopBar';
 import BottomBar from './BottomBar';
-import Menu from './Menu';
-import Icons from './Icons';
 import styled, { createGlobalStyle } from 'styled-components'; 
 import reset from 'styled-reset';
 
@@ -21,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const MyPageStyle = styled.div`
-  border: 1px solid pink;
 
   @media (min-width: 800px) {
     display: flex;
@@ -44,25 +41,16 @@ const ContentWrapper = styled.div`
   flex-direction: row;
   flex-grow: 2;
   box-sizing: 'border-box';
-  /* margin: 0 16px; */
 
-  /* @media (min-width: 800px) {
-    margin: 0 40px;
-  } */
+  @media (min-width: 800px) {
+  }
 
   .component-wrapper {
-    /* flex-grow: 2; */
-    /* padding: 60px;
-    margin: 10px; */
-    border-radius: 5px;
-    /* -webkit-box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65);
-    -moz-box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65); */
-    /* box-shadow: 15px 14px 37px -12px rgba(0,0,0,0.65); */
-    /* background-color: #ff47bf; */
+    padding: 16px;
 
-    /* @media (min-width: 800px) {
-      margin: 0 40px;
-    } */
+    @media (min-width: 800px) {
+
+    }
   }
 `
 

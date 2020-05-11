@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { useRouter } from 'next/dist/client/router';
 import { locales, languageNames } from '../translations/config';
 import { LocaleContext } from '../context/LocaleContext';
-import TopMenu from '../components/TopMenu';
-import SideLeftMenu from '../components/SideLeftMenu';
+import SideBarMenu from '../components/SideBarMenu';
+import Language from '../components/Language';
 
 const TopBarStyle = styled.div`
   height: 40px;
-  /* margin: 0 16px; */
   display: flex;
   line-height: 40px;
   font-size: 16px;
@@ -16,7 +15,6 @@ const TopBarStyle = styled.div`
 
   @media (min-width: 800px) {
     font-size: 16px;
-    /* margin: 0 80px; */
   }
 
   ul {
@@ -43,16 +41,7 @@ const TopBar = () => {
 
   return (
     <TopBarStyle>
-      <TopMenu />
-      <SideLeftMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
-      <ul>
-        {locales.map(locale => (
-          <li key={locale} value={locale} >
-            <a onClick={() => handleOnClick(locale)}>{locale.toUpperCase()}.</a>
-          </li>
-        ))}
-      </ul>
-
+      <SideBarMenu pageWrapId={"page-wrap"} outerContainerId={"App"} locales={locales} locale={locale} />
     </TopBarStyle> 
   )
 }
