@@ -3,10 +3,16 @@ import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 
 const HomeStyle = styled.div`
-    color: #292929;
-    color: #4f4f4f;
-    color: #404040;
-    box-sizing: 'border-box';
+  color: #292929;
+  color: #4f4f4f;
+  color: #404040;
+  box-sizing: 'border-box';
+
+  .logo-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   h1 {
     margin-top: 24px;
@@ -50,6 +56,9 @@ const HomeComponent = () => {
 
   return (
     <HomeStyle>
+      <div className='logo-style'>
+        <img src="/img/salmon.png" alt="Logo" width="232" height="170" />
+      </div>
       <h1>Monica <span>S</span>alamanca.</h1>
       <p>{t('homePageText')}</p>
     </HomeStyle> 

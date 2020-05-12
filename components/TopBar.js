@@ -41,7 +41,8 @@ const TopBar = () => {
 
   return (
     <TopBarStyle>
-      <SideBarMenu pageWrapId={"page-wrap"} outerContainerId={"App"} locales={locales} locale={locale} />
+      {/* <SideBarMenu pageWrapId={"page-wrap"} outerContainerId={"App"} locales={locales} locale={locale} /> */}
+      <p>Top Bar</p>
     </TopBarStyle> 
   )
 }
