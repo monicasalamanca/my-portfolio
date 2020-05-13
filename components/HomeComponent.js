@@ -29,7 +29,7 @@ const HomeStyle = styled.div`
 
   p {
     font-family: 'Quicksand', sans-serif;
-    margin-top: 24px;
+    margin-top: 20px;
     text-align: center;
     font-size: 20px;
     line-height: 26px;
@@ -49,6 +49,7 @@ const HomeComponent = () => {
       <h1>Portfolio</h1>
       <Icons />
       <h1>Skills</h1>
+      <p>&middot; Javascript &middot; HTML5 &middot; CSS &middot; Git &middot; SASS &middot; Gulp &middot; ReactJS &middot; NextJS &middot; Webpack &middot; Babel &middot; ES6 &middot; PHP &middot; Laravel &middot; Photoshop &middot; Wordpress &middot; MySQL &middot; Agile &middot; NodeJS &middot;</p>
       <h1>Contact</h1>
     </HomeStyle> 
   )

@@ -5,7 +5,7 @@ import { Github } from '@styled-icons/feather/Github';
 import { Codepen } from '@styled-icons/feather/Codepen';
 
 const IconsStyle = styled.div`
-  margin: 16px 0;
+  margin: 20px 0;
   font-size: 12px;
 
   ul {
