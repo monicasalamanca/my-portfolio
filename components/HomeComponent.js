@@ -1,6 +1,7 @@
 import { Component } from "react";
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
+import Icons from '../components/Icons.js'
 
 const HomeStyle = styled.div`
   color: #292929;
@@ -15,38 +16,23 @@ const HomeStyle = styled.div`
   }
 
   h1 {
-    margin-top: 24px;
+    margin-top: 32px;
     font-size: 32px;
     word-break: 'break-word';
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    text-align: right;
+    text-align: center;
     text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.92);
-
     position: relative;
 
-    @media (min-width: 800px) {
-      margin-top: 60px;
-      font-size: 90px;
-      line-height: 90%;
-    }
-
-    span {
-      font-size: 32px;
-    }
   }
 
   p {
     font-family: 'Quicksand', sans-serif;
     margin-top: 24px;
-    text-align: right;
-    font-size: 14px;
-    color: #6b6b6b;
-
-    @media (min-width: 800px) {
-      margin-top: 60px;
-      font-size: 25px;
-    }
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
   }
 `
 
@@ -59,8 +45,11 @@ const HomeComponent = () => {
       <div className='logo-style'>
         <img src="/img/salmon.png" alt="Logo" width="232" height="170" />
       </div>
-      <h1>Monica <span>S</span>alamanca.</h1>
-      <p>{t('homePageText')}</p>
+      <p>Hi! My name is Monica and I am a creative and detailed oriented Frontend Developer with a bachelor degree in software engineer. I am passionate about HTML, CSS, JavaScript, UX designs and trending technologies, which over the course of my career I have used to build many websites and web applications in different fields. </p>
+      <h1>Portfolio</h1>
+      <Icons />
+      <h1>Skills</h1>
+      <h1>Contact</h1>
     </HomeStyle> 
   )
 

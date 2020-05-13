@@ -5,16 +5,18 @@ import { Github } from '@styled-icons/feather/Github';
 import { Codepen } from '@styled-icons/feather/Codepen';
 
 const IconsStyle = styled.div`
-  width: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: 16px 0;
   font-size: 12px;
-  border: 1px solid red;
 
-  ul li {
-    margin: 14px 0;
-    color: #404040;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+      color: #404040;
+      margin: 0 16px;
+    }
   }
 `
 
