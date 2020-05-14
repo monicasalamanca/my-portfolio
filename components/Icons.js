@@ -25,9 +25,9 @@ class Menu extends Component {
     return (
       <IconsStyle>
         <ul>
-          <li>
+          {/* <li>
             <a><Linkedin size="30" /></a>
-          </li>
+          </li> */}
           <li>
             <a><Github size="30" /></a>
           </li>
