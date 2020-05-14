@@ -46,14 +46,14 @@ const HomeComponent = () => {
       <div className='logo-style'>
         <img src="/img/salmon.png" alt="Logo" width="232" height="170" />
       </div>
-      <p>Hi! My name is Monica and I am a creative and detailed oriented Frontend Developer with a bachelor degree in software engineer. I am passionate about HTML, CSS, JavaScript, UX designs and trending technologies, which over the course of my career I have used to build many websites and web applications in different fields. </p>
-      <h1>Skills</h1>
+      <p>{t('description')}</p>
+      <h1>{t('skills')}</h1>
       <p>&middot; Javascript &middot; HTML5 &middot; CSS &middot; Git &middot; SASS &middot; Gulp &middot; ReactJS &middot; NextJS &middot; Webpack &middot; Babel &middot; ES6 &middot; PHP &middot; Laravel &middot; Photoshop &middot; Wordpress &middot; MySQL &middot; Agile &middot; NodeJS &middot;</p>
-      <h1>Some Code...</h1>
+      <h1>{t('code')}</h1>
       <Icons />
-      <h1>Portfolio</h1>
+      <h1>{t('myPortfolio')}</h1>
       <p>Add Name of Project - Description - Stack used - Link to code - Link to Video on Youtube of how it was build - Link to video on how to </p>
-      <h1>Contact</h1>
+      <h1>{t('contact')}</h1>
       <p>Contact Form. </p>
     </HomeStyle> 
   )

@@ -10,9 +10,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Quicksand', sans-serif;
     align-items: center;
-    /* color: #EFFFFA; */
-    /* display: flex; */
-    /* height: 100vh; */
     justify-content: center;
     text-rendering: optimizeLegibility;
   }
@@ -24,7 +21,6 @@ const MyPageStyle = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* margin: 40px; */
     box-sizing: 'border-box';
   }
 `

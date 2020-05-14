@@ -3,10 +3,15 @@ import { useRouter } from 'next/dist/client/router';
 import styled from 'styled-components';
 
 const StyledLang = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 20px;
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 6px 6px 0;
+      cursor: pointer;
+    }
+  }
 `;
 
 const Language = ({ locales }) => {
@@ -22,7 +27,7 @@ const Language = ({ locales }) => {
       <ul>
         {locales.map(locale => (
           <li key={locale} value={locale} >
-            <a onClick={() => handleOnClick(locale)}>{locale}.</a>
+            <a onClick={() => handleOnClick(locale)}>{locale.toUpperCase()}.</a>
           </li>
         ))}
       </ul>
