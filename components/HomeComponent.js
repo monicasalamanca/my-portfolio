@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 import Icons from '../components/Icons.js';
-import ContactForm from '../components/NewContactForm';
+import ContactForm from '../components/ContactForm';
 
 const HomeStyle = styled.div`
   color: #292929;
