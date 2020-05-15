@@ -16,7 +16,7 @@ const AboutComponent = () => {
 
   return (
     <AboutStyle>
-      <p>{t('homePageTitle')}</p>
+
     </AboutStyle> 
   )
 

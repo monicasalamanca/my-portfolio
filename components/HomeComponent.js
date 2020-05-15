@@ -1,7 +1,8 @@
-import { Component } from "react";
+import React from "react";
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
-import Icons from '../components/Icons.js'
+import Icons from '../components/Icons.js';
+import ContactForm from '../components/NewContactForm';
 
 const HomeStyle = styled.div`
   color: #292929;
@@ -39,7 +40,7 @@ const HomeStyle = styled.div`
 
 const HomeComponent = () => {
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <HomeStyle>
@@ -53,8 +54,7 @@ const HomeComponent = () => {
       <Icons />
       <h1>{t('myPortfolio')}</h1>
       <p>Add Name of Project - Description - Stack used - Link to code - Link to Video on Youtube of how it was build - Link to video on how to </p>
-      <h1>{t('contact')}</h1>
-      <p>Contact Form. </p>
+      <ContactForm />
     </HomeStyle> 
   )
 
