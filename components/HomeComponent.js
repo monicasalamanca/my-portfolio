@@ -4,7 +4,7 @@ import useTranslation from '../hooks/useTranslations';
 import Icons from '../components/Icons.js';
 import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTools, faLaptopCode, faCode, faBriefcase, faAddressCard, faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faTools, faCode, faBriefcase, faAddressCard, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 const HomeStyle = styled.div`
   color: #292929;
@@ -20,14 +20,15 @@ const HomeStyle = styled.div`
 
   h1 {
     margin-top: 32px;
-    font-size: 18px;
+    font-size: 30px;
     word-break: 'break-word';
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     text-align: center;
-    text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.92);
+    /* text-shadow: 3px 3px 3px rgba(150, 150, 150, 0.92); */
     position: relative;
     color: #ff7e30;
+    color: #808080;
   }
 
   p {
@@ -59,9 +60,7 @@ const SectionStyle = styled.div`
 
       &.me-img {
         border-radius: 100px;
-        border: 1px solid #bcbaba;
-
-
+        border: 4px solid #21a9b6;
       }
     }
   }
@@ -87,6 +86,7 @@ const SectionStyle = styled.div`
       border: 1px solid #cfcfcf;
       border-radius: 80px;
       color: #808080;
+      color: #efe811;
 
       &.lightbulb {
         padding: 20px 32px;
