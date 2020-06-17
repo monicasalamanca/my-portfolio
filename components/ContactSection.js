@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import styled from 'styled-components';
-import udemy from './api/udemy';
 import useTranslation from '../hooks/useTranslations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Linkedin } from '@styled-icons/feather/Linkedin';
