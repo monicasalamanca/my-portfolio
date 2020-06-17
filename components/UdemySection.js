@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 const UdemySectionStyle = styled.div`
 
