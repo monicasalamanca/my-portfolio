@@ -29,10 +29,10 @@ class Menu extends Component {
             <a><Linkedin size="30" /></a>
           </li> */}
           <li>
-            <a><Github size="30" /></a>
+            <a href="https://github.com/monicasalamanca"><Github size="30" /></a>
           </li>
           <li>
-            <a><Codepen size="30" /></a>
+            <a href="https://codesandbox.io/u/monicasalamanca/sandboxes"><Codepen size="30" /></a>
           </li>
         </ul>
       </IconsStyle> 

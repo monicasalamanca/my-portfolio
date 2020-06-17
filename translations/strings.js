@@ -6,7 +6,12 @@ const strings = {
     skills: 'Skills',
     learning: 'Currently learning...',
     contact: 'Contact me',
-    code: 'Some code...'
+    coffee: 'Buy me a coffee',
+    contactlinkedin: 'Contact me on',
+    code: 'Some code...',
+    projectname: 'Project name:',
+    projectdescription: 'Description:',
+    projectmyportfolio: 'My portfolio'
   },
   fr: {
     homePageTitle: 'Salmon - Page d`\accueil',
@@ -15,7 +20,12 @@ const strings = {
     skills: 'Compétences',
     learning: 'En cours d\'apprentissage...',
     contact: 'Contactez moi',
-    code: 'Du code...'
+    coffee: 'Achetez-moi un café',
+    contactlinkedin: 'Contactez-moi sur',
+    code: 'Du code...',
+    projectname: 'Nom du projet:',
+    projectdescription: 'Description:',
+    projectmyportfolio: 'Mon Portefeuille'
   },
   es: {
     homePageTitle: 'Salmon - Home Page',
@@ -24,7 +34,12 @@ const strings = {
     skills: 'Habilidades',
     learning: 'Actualmente aprendiendo...',
     contact: 'Contáctame',
-    code: 'Algo de codigo'
+    coffee: 'Comprame un cafe',
+    contactlinkedin: 'Contactame en',
+    code: 'Algo de codigo',
+    projectname: 'Nombre de proyecto:',
+    projectdescription: 'Descripcion:',
+    projectmyportfolio: 'Mi Portafolio'
   }
 };
 
