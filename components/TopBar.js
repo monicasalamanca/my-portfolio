@@ -20,8 +20,8 @@ const TopBarStyle = styled.div`
 `
 
 const TopBar = (props) => {
-  const router = useRouter()
-  const { locale } = useContext(LocaleContext)
+  const router = useRouter();
+  const { locale } = useContext(LocaleContext);
 
   const handleOnClick = useCallback((lang) => {
     const regex = new RegExp(`^/(${locales.join('|')})`);

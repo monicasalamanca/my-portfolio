@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import styled from 'styled-components';
 import Language from './Language';
-import Link from 'next/link'
+import Link from 'next/link';
 
 const SideMenuStyle = styled.div`
   position: absolute;

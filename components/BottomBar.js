@@ -13,16 +13,14 @@ const BottomBarStyle = styled.div`
   @media (min-width: 800px) {
     margin: 0 80px;
   }
-`
+`;
 
-class BottomBar extends Component {
-  render() {
-    return (
-      <BottomBarStyle>
-        <p>&copy; 2020</p>
-      </BottomBarStyle> 
-    )
-  }
+const BottomBar = () => {
+  return (
+    <BottomBarStyle>
+      <p>&copy; 2020</p>
+    </BottomBarStyle> 
+  )
 }
 
 export default BottomBar;

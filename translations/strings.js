@@ -16,7 +16,7 @@ const strings = {
   fr: {
     homePageTitle: 'Salmon - Page d`\accueil',
     myPortfolio: 'Portefeuille', 
-    description: 'Salut!, Mon nom es Monica, Je suis une creative Frontend developeur avec une Bac en ingénieur logiciel. Je suis passione de HTML, CSS, Javascript, conception de UX et technologies tendance, dans le cours de ma carriere javais utiliser pour programmer des sites web et des differents applications dans differentes domaines. ',
+    description: `Salut!, Je m'appelle Monica, Je suis une creative Frontend developeur avec une Bac en génie logiciel. Je suis passione de HTML, CSS, Javascript, conception de UX et tendances informatiques que dans le cours de ma carriere j'avais utiliser pour programmer des sites web et des differents applications dans differentes domaines. `,
     skills: 'Compétences',
     learning: 'En cours d\'apprentissage...',
     contact: 'Contactez moi',
