@@ -1,8 +1,7 @@
 import { Component } from "react";
 import styled from 'styled-components';
-import { Linkedin } from '@styled-icons/feather/Linkedin';
 import { Github } from '@styled-icons/feather/Github';
-import { Codepen } from '@styled-icons/feather/Codepen';
+import { Codesandbox } from '@styled-icons/feather/Codesandbox';
 
 const IconsStyle = styled.div`
   margin: 20px 0;
@@ -25,14 +24,11 @@ class Menu extends Component {
     return (
       <IconsStyle>
         <ul>
-          {/* <li>
-            <a><Linkedin size="30" /></a>
-          </li> */}
           <li>
-            <a href="https://github.com/monicasalamanca"><Github size="30" /></a>
+            <a href="https://github.com/monicasalamanca"><Github size="40" /></a>
           </li>
           <li>
-            <a href="https://codesandbox.io/u/monicasalamanca/sandboxes"><Codepen size="30" /></a>
+            <a href="https://codesandbox.io/u/monicasalamanca/sandboxes"><Codesandbox size="40" /></a>
           </li>
         </ul>
       </IconsStyle> 

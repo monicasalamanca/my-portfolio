@@ -4,6 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 const UdemySectionStyle = styled.div`
+  border: 1px solid #bcbaba;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 3px 3px 5px 0px rgba(201,201,201,1);
+  margin-bottom: 36px;
+  margin-top: 24px;
+  padding: 36px 20px 24px;
 
   h1 {
     margin-bottom: 32px;
@@ -13,8 +20,17 @@ const UdemySectionStyle = styled.div`
     display: flex;
     justify-content: center;
 
-    &.lightbulb {
-      padding: 20px 32px;
+    .icon-awesome {
+      font-size: 58px;
+      padding: 20px;
+      border: 1px solid #cfcfcf;
+      border-radius: 80px;
+      color: #808080;
+      color: #efe811;
+
+      &.lightbulb {
+        padding: 20px 29px;
+      }
     }
   }
 `;
@@ -59,6 +75,10 @@ const ProgressBarStyle = styled.div`
         width: 50%;
         height: 100%;
         border-radius: 4px;
+
+        &.algo {
+          width: 5%;
+        }
       }
     }
   }
@@ -76,6 +96,13 @@ const ProgressBarStyle = styled.div`
       font-weight: bold;
     }
   }
+`;
+
+const DividerStyle = styled.div`
+  margin: 20px auto;
+  border: 0.5px solid grey;
+  height: 0;
+  width: 70%;
 `;
 
 const UdemySection = () => {
@@ -99,7 +126,18 @@ const UdemySection = () => {
           </div>
         </div>
       </ProgressBarStyle>
-      
+      <DividerStyle />
+      <ProgressBarStyle>
+        <h2><a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/">JavaScript Algorithms and Data Structures Masterclass</a></h2>
+        <div className="wrapper">
+          <div className="percentage">
+            <p>5%</p>
+          </div>
+          <div className="progress-bar">
+            <div className="filler algo"></div>
+          </div>
+        </div>
+      </ProgressBarStyle>
 
     </UdemySectionStyle>
   )

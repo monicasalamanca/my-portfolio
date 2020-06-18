@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { SocialGithub } from '@styled-icons/typicons/SocialGithub';
 
 const PortfolioSectionStyle = styled.div`
 
@@ -52,6 +53,13 @@ const PortfolioSectionStyle = styled.div`
   }
 `;
 
+const DividerStyle = styled.div`
+  margin: 20px auto;
+  border: 0.5px solid grey;
+  height: 0;
+  width: 70%;
+`;
+
 const PortfolioSection = () => {
 
   const { t } = useTranslation();
@@ -66,9 +74,8 @@ const PortfolioSection = () => {
         <p><span>{t('projectname')} </span>{t('projectmyportfolio')}</p>
         <p><span>{t('projectdescription')}</span> ReactJS app developer in NextJS</p>
         <p><span>Stack:</span>NextJS ReactJS</p>
-        <p><span><a href="https://github.com/monicasalamanca/my-portfolio">Github repo</a></span></p>
+        <p><span><a href="https://github.com/monicasalamanca/my-portfolio"><SocialGithub size='40' color='#29adc4' /></a></span></p>
       </div>
-
     </PortfolioSectionStyle>
   )
 }

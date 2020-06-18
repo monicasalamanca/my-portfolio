@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Linkedin } from '@styled-icons/feather/Linkedin';
-import { Coffee } from '@styled-icons/feather/Coffee';
+import { LinkedinIn } from '@styled-icons/fa-brands/LinkedinIn';
+import { Coffee } from '@styled-icons/fa-solid/Coffee';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 const ContactSectionStyle = styled.div`
@@ -62,7 +62,7 @@ const ContactSection = () => {
       </div>
       <h1>{t('contact')}</h1>
       <p className="contact-txt">{t('coffee')} <Coffee size="20" /></p>
-      <p className="contact-txt">{t('contactlinkedin')} <a href="https://www.linkedin.com/in/monicasalamanca/"><Linkedin size="20" /></a></p>
+      <p className="contact-txt">{t('contactlinkedin')} <a href="https://www.linkedin.com/in/monicasalamanca/"><LinkedinIn size="20" /></a></p>
     </ContactSectionStyle>
   )
 }
