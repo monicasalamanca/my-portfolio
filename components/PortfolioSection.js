@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

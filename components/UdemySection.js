@@ -66,6 +66,7 @@ const ProgressBarStyle = styled.div`
   h2 {
     text-align: center;
     margin: 4px;
+    margin-bottom: 12px;
 
     a {
       font-size: 14px;
@@ -78,8 +79,6 @@ const ProgressBarStyle = styled.div`
 `;
 
 const UdemySection = () => {
-
-  const [results, setResults] = useState([]);
 
   const { t } = useTranslation();
 
