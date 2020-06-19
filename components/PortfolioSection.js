@@ -14,6 +14,21 @@ const PortfolioSectionStyle = styled.div`
   margin-top: 24px;
   padding: 36px 20px 24px;
 
+  @media (min-width: 576px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   .icon-hero {
     display: flex;
     justify-content: center;
@@ -72,7 +87,7 @@ const PortfolioSection = () => {
       <h1>{t('myPortfolio')}</h1>
       <div className="project-wrapper">
         <p><span>{t('projectname')} </span>{t('projectmyportfolio')}</p>
-        <p><span>{t('projectdescription')}</span> ReactJS app developer in NextJS</p>
+        <p><span>{t('projectdescription')}</span> ReactJS app developed in NextJS</p>
         <p><span>Stack:</span>NextJS ReactJS</p>
         <p><span><a href="https://github.com/monicasalamanca/my-portfolio"><SocialGithub size='40' color='#29adc4' /></a></span></p>
       </div>

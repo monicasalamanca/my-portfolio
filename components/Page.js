@@ -13,46 +13,28 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     text-rendering: optimizeLegibility;
   }
-`
+`;
 
 const MyPageStyle = styled.div`
-
-  @media (min-width: 800px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: 'border-box';
-  }
-`
+  padding: 16px;
+`;
 
 const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-`
+`;
 
 const ContentWrapper = styled.div`
-  /* display: flex; */
   flex-direction: row;
   flex-grow: 2;
   box-sizing: 'border-box';
-
-  @media (min-width: 800px) {
-  }
-
-  .component-wrapper {
-    padding: 16px;
-
-    @media (min-width: 800px) {
-
-    }
-  }
-`
+`;
 
 const Page = ({ titleKey, children }) => {
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return(
     <MyPageStyle>
@@ -63,7 +45,7 @@ const Page = ({ titleKey, children }) => {
       <Wrapper>
         <TopBar />
         <ContentWrapper>
-          <div className='component-wrapper'>{children}</div>
+          {children}
         </ContentWrapper>
         <BottomBar />
       </Wrapper>

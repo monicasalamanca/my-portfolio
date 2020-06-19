@@ -14,10 +14,21 @@ const TopBarStyle = styled.div`
   font-size: 16px;
   padding: 0 16px;
 
-  @media (min-width: 800px) {
-    font-size: 16px;
+  @media (min-width: 576px) {
+    margin-left: 50px;
+    margin-right: 50px;
   }
-`
+
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+`;
 
 const TopBar = (props) => {
   const router = useRouter();

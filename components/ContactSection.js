@@ -15,6 +15,21 @@ const ContactSectionStyle = styled.div`
   margin-top: 24px;
   padding: 36px 20px 24px;
 
+  @media (min-width: 576px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   .icon-hero {
     display: flex;
     justify-content: center;

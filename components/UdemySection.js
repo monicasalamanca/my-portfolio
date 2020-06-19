@@ -12,6 +12,21 @@ const UdemySectionStyle = styled.div`
   margin-top: 24px;
   padding: 36px 20px 24px;
 
+  @media (min-width: 576px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
   h1 {
     margin-bottom: 32px;
   }
@@ -36,9 +51,10 @@ const UdemySectionStyle = styled.div`
 `;
 
 const ProgressBarStyle = styled.div`
-
   display: flex;
   flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
 
   .wrapper {
     background-color: #ad65c0;
