@@ -52,6 +52,11 @@ const ContactSectionStyle = styled.div`
   p.contact-txt {
     line-height: unset;
 
+    a {
+      text-decoration: none;
+      color: #404040;
+    }
+
     &:last-child {
       margin-top:12px;
 
@@ -76,7 +81,7 @@ const ContactSection = () => {
         <FontAwesomeIcon className="icon-awesome contact" icon={faAddressCard} />
       </div>
       <h1>{t('contact')}</h1>
-      <p className="contact-txt">{t('coffee')} <Coffee size="20" /></p>
+      <p className="contact-txt"><a href="https://www.buymeacoffee.com/monsal">{t('coffee')} <Coffee size="20" /></a></p>
       <p className="contact-txt">{t('contactlinkedin')} <a href="https://www.linkedin.com/in/monicasalamanca/"><LinkedinIn size="20" /></a></p>
     </ContactSectionStyle>
   )
