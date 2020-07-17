@@ -154,6 +154,7 @@ const UdemySection = () => {
           </div>
         </div>
       </ProgressBarStyle>
+      <DividerStyle />
       <ProgressBarStyle>
         <h2><a href="https://www.udemy.com/course/microservices-with-node-js-and-react/">Microservices with Node JS and React</a></h2>
         <div className="wrapper">
