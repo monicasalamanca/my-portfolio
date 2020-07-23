@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import useTranslation from '../hooks/useTranslations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import ReactGa from 'react-ga';
 
 const UdemySectionStyle = styled.div`
   border: 1px solid #bcbaba;
@@ -125,6 +126,13 @@ const UdemySection = () => {
 
   const { t } = useTranslation();
 
+  const analyticsHandler = (category, action) => {
+    ReactGa.event({
+      category: category,
+      action: action
+    })
+  }
+
   return (
     <UdemySectionStyle>
       <div className="icon-hero">
@@ -132,7 +140,7 @@ const UdemySection = () => {
       </div>
       <h1>{t('learning')}</h1>
       <ProgressBarStyle>
-        <h2><a href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/">The Complete React Native + Hooks Course [2020 Edition]</a></h2>
+        <h2><a href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/" onClick={analyticsHandler('UdemyLinks', 'React Native Course')}>The Complete React Native + Hooks Course [2020 Edition]</a></h2>
         <div className="wrapper">
           <div className="percentage">
             <p>50%</p>
@@ -144,7 +152,7 @@ const UdemySection = () => {
       </ProgressBarStyle>
       <DividerStyle />
       <ProgressBarStyle>
-        <h2><a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/">JavaScript Algorithms and Data Structures Masterclass</a></h2>
+        <h2><a href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/" onClick={analyticsHandler('UdemyLinks', 'Data Structures')}>JavaScript Algorithms and Data Structures Masterclass</a></h2>
         <div className="wrapper">
           <div className="percentage">
             <p>5%</p>
@@ -156,7 +164,7 @@ const UdemySection = () => {
       </ProgressBarStyle>
       <DividerStyle />
       <ProgressBarStyle>
-        <h2><a href="https://www.udemy.com/course/microservices-with-node-js-and-react/">Microservices with Node JS and React</a></h2>
+        <h2><a href="https://www.udemy.com/course/microservices-with-node-js-and-react/" onClick={analyticsHandler('UdemyLinks', 'Microservices')}>Microservices with Node JS and React</a></h2>
         <div className="wrapper">
           <div className="percentage">
             <p>2%</p>

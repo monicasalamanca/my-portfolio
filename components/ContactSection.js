@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { LinkedinIn } from '@styled-icons/fa-brands/LinkedinIn';
 import { Coffee } from '@styled-icons/fa-solid/Coffee';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import ReactGa from 'react-ga';
 
 const ContactSectionStyle = styled.div`
 
@@ -75,14 +76,21 @@ const ContactSection = () => {
 
   const { t } = useTranslation();
 
+  const analyticsHandler = (category, action) => {
+    ReactGa.event({
+      category: category,
+      action: action
+    })
+  }
+
   return (
     <ContactSectionStyle>
       <div className="icon-hero">
         <FontAwesomeIcon className="icon-awesome contact" icon={faAddressCard} />
       </div>
       <h1>{t('contact')}</h1>
-      <p className="contact-txt"><a href="https://www.buymeacoffee.com/monsal">{t('coffee')} <Coffee size="20" /></a></p>
-      <p className="contact-txt">{t('contactlinkedin')} <a href="https://www.linkedin.com/in/monicasalamanca/"><LinkedinIn size="20" /></a></p>
+      <p className="contact-txt"><a href="https://www.buymeacoffee.com/monsal" onClick={analyticsHandler('ContactMe', 'Coffee')}>{t('coffee')}  <Coffee size="20" /></a></p>
+      <p className="contact-txt">{t('contactlinkedin')} <a href="https://www.linkedin.com/in/monicasalamanca/" onClick={analyticsHandler('ContactMe', 'Linkedin')}><LinkedinIn size="20" /></a></p>
     </ContactSectionStyle>
   )
 }

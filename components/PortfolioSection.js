@@ -3,6 +3,7 @@ import useTranslation from '../hooks/useTranslations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { SocialGithub } from '@styled-icons/typicons/SocialGithub';
+import ReactGa from 'react-ga';
 
 const PortfolioSectionStyle = styled.div`
 
@@ -79,6 +80,13 @@ const PortfolioSection = () => {
 
   const { t } = useTranslation();
 
+  const analyticsHandler = (category, action) => {
+    ReactGa.event({
+      category: category,
+      action: action
+    })
+  }
+
   return (
     <PortfolioSectionStyle>
       <div className="icon-hero">
@@ -89,7 +97,7 @@ const PortfolioSection = () => {
         <p><span>{t('projectname')} </span>{t('projectmyportfolio')}</p>
         <p><span>{t('projectdescription')}</span> ReactJS app developed in NextJS</p>
         <p><span>Stack:</span>NextJS ReactJS</p>
-        <p><span><a href="https://github.com/monicasalamanca/my-portfolio"><SocialGithub size='40' color='#29adc4' /></a></span></p>
+        <p><span><a href="https://github.com/monicasalamanca/my-portfolio" onClick={analyticsHandler('Portfolio', 'Github')}><SocialGithub size='40' color='#29adc4' /></a></span></p>
       </div>
     </PortfolioSectionStyle>
   )
