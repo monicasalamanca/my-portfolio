@@ -143,7 +143,7 @@ const UdemySection = () => {
         <h2><a href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/" onClick={analyticsHandler('UdemyLinks', 'React Native Course')}>The Complete React Native + Hooks Course [2020 Edition]</a></h2>
         <div className="wrapper">
           <div className="percentage">
-            <p>50%</p>
+            <p>60%</p>
           </div>
           <div className="progress-bar">
             <div className="filler"></div>
