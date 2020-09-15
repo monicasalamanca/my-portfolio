@@ -93,6 +93,10 @@ const ProgressBarStyle = styled.div`
         height: 100%;
         border-radius: 4px;
 
+        &.full {
+          width: 100%;
+        }
+
         &.algo {
           width: 5%;
         }
@@ -143,10 +147,10 @@ const UdemySection = () => {
         <h2><a href="https://www.udemy.com/course/the-complete-react-native-and-redux-course/" onClick={analyticsHandler('UdemyLinks', 'React Native Course')}>The Complete React Native + Hooks Course [2020 Edition]</a></h2>
         <div className="wrapper">
           <div className="percentage">
-            <p>60%</p>
+            <p>100%</p>
           </div>
           <div className="progress-bar">
-            <div className="filler"></div>
+            <div className="filler full"></div>
           </div>
         </div>
       </ProgressBarStyle>
