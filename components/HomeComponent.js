@@ -42,7 +42,6 @@ const HomeComponent = () => {
     <HomeStyle>
       <WelcomeSection />
       <SkillsSection />
-      <UdemySection />
       <CodeSection />
       <PortfolioSection />
       <ContactSection />
